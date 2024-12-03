@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Thông tin chi tiết lớp học -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/classInfoCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Tên giáo viên -->
+                <EditText
+                    android:id="@+id/editTeacherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Teacher Name" />
+
+                <!-- Ngày lớp học -->
+                <EditText
+                    android:id="@+id/editClassDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date" />
+
+                <!-- Ghi chú -->
+                <EditText
+                    android:id="@+id/editComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comments" />
+
+                <!-- Nút Update -->
+                <Button
+                    android:id="@+id/btnUpdateClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update" />
+
+                <!-- Nút Delete -->
+                <Button
+                    android:id="@+id/btnDeleteClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Nút Update -->
+
+        <!-- Nút Delete -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
